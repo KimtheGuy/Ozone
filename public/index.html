@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ozone</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script src="/index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"> 
+<style>
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #334166;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #334166;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #334166;
+}
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+.dropdown {
+  position: relative;
+  display: inline-block;
+  border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;-
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+    </style>
+</head>
+<body> 
+  
+  <div class="box"> 
+<h1 class="middle title">Ozone</h1>
+<div class="searchbar">
+<input class="bruh search" list="listid" id="input" placeholder="https://youtube.com" autofocus >
+ <datalist id='listid'>
+   <option value='youtube.com'> Youtube</option>
+   <option value='discord.com'> Discord</option>
+   <option value='twitch.tv'> Twitch</option>
+   <option value='reddit.com'> Reddit</option>
+   <option value='coolmathgames.com'> Coolmathgames</option>
+</datalist>
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn bruh parents test-btn">Choose</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="./404.html">Games</a>
+    <a href="./about.html">About</a>
+  </div>
+</div>
+<button class="bruh parents test-btn" id="go" onclick="go()">Go</button></div></div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</body>
+</html>
+
